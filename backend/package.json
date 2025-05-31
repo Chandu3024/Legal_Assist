@@ -5,8 +5,7 @@
   "main": "index.ts",
   "type": "module",
   "scripts": {
-    "dev": "nodemon --watch src --ext ts --exec npx ts-node-esm src/index.ts",
-    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\" ",
+    "dev": "concurrently \"tsc --watch\" \"wait-on dist/index.js && nodemon dist/index.js\"",
     "build": "tsc",
     "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,7 +26,8 @@
     "mongoose": "^7.4.2",
     "morgan": "^1.10.0",
     "openai": "^4.96.2",
-    "uuid": "^11.1.0"
+    "uuid": "^11.1.0",
+    "wait-on": "^7.0.1"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
@@ -43,6 +43,6 @@
     "typescript": "^5.8.3"
   },
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   }
 }
