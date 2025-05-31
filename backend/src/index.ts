@@ -15,11 +15,7 @@ const app = express();
 // === Enable CORS ===
 // Required for cross-origin cookies (frontend on Vercel, backend on Render)
 app.use(cors({
-<<<<<<< HEAD
   origin: true, // e.g., https://legal-assist-frontend-nkut.onrender.com
-=======
-  origin: process.env.FRONTEND_DOMAIN, // e.g., https://legal-assist-frontend-nkut.onrender.com
->>>>>>> f76affbeda726b434cb099c24cdd2c12323abd0a
   credentials: true,
 }));
 
