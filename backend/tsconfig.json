@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+<<<<<<< HEAD
+    "module": "ESNext", 
+=======
+    "module": "NodeNext",
+>>>>>>> f76affbeda726b434cb099c24cdd2c12323abd0a
+    "moduleResolution": "NodeNext",
+    "target": "ES2022",
+    "sourceMap": true,
+    "outDir": "dist",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
+  },
+<<<<<<< HEAD
+  "ts-node": {
+    "esm": true
+  },
+=======
+>>>>>>> f76affbeda726b434cb099c24cdd2c12323abd0a
+  "include": ["src/**/*.ts", "src/index.ts", "env-test.js"]
+}
