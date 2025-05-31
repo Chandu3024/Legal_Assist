@@ -1,8 +1,6 @@
 flask
 flask-cors
 pymongo
-gensim
-nltk
-requests
 python-dotenv
-scikit-learn
+requests
+gunicorn
