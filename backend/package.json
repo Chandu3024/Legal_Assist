@@ -41,11 +41,8 @@
     "nodemon": "^3.0.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.8.3"
-<<<<<<< HEAD
   },
   "engines": {
     "node": "16.x"
-=======
->>>>>>> f76affbeda726b434cb099c24cdd2c12323abd0a
   }
 }
