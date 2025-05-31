@@ -1,20 +1,17 @@
 import mongoose from "mongoose";
+import messageSchema from "./message-model.js";
 import { randomUUID } from "crypto";
 
-const messageSchema = new mongoose.Schema({
+const chatSchema = new mongoose.Schema({
   id: {
     type: String,
     default: () => randomUUID(),
   },
-  role: {
+  title: {
     type: String,
-    enum: ["user", "assistant"],
-    required: true,
+    default: "New Chat",
   },
-  content: {
-    type: String,
-    required: true,
-  },
+  messages: [messageSchema]
 });
 
-export default messageSchema;
+export default chatSchema;'
