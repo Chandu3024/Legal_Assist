@@ -14,4 +14,4 @@ const chatSchema = new mongoose.Schema({
   messages: [messageSchema]
 });
 
-export default chatSchema;'
+export default chatSchema;
